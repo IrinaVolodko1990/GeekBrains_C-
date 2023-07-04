@@ -16,4 +16,30 @@ if (firstNumber==secondNumber){
 }
 
 
+//Задача 4: Напишите программу, которая принимает на вход три
+//числа и выдаёт максимальное из этих чисел.
+//2, 3, 7 -> 7
+//44 5 78 -> 78
+//22 3 9 -> 22
+int max = 0;
+Console.Write("Input first number: ");
+int firstNumber = Int32.Parse(Console.ReadLine());
+Console.Write ("Input second number: ");
+int secondNumber =Int32.Parse(Console.ReadLine());
+Console.Write ("Input third number: ");
+int thirdNumber = Int32.Parse(Console.ReadLine());
+if (firstNumber==secondNumber && secondNumber==thirdNumber){
+    Console.Write ("You entered the same numbers");
+} else {
+    max = firstNumber;
+}
+if (max<secondNumber){
+    max=secondNumber;
+}
+if (max<thirdNumber){
+    max=thirdNumber;
+}
+Console.WriteLine ($"Max number = {max}");
+
+
 
