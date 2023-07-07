@@ -61,12 +61,10 @@ Console.WriteLine($"Max number = {max}");
 
 Console.Write("Input number: ");
 int number = Int32.Parse(Console.ReadLine());
-if (number % 2 == 0)
-{
-    Console.Write($"Уеs, {number} is even number");
-}
-else
-{ Console.Write($"No, {number} is odd number"); }
+if (number % 2 == 0){
+    Console.Write ($"Yes, {number} is even number");
+} else 
+{Console.Write ($"No, {number} is odd number");}
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
