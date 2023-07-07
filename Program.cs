@@ -4,15 +4,21 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
-Console.Write ("Input first number: ");
+Console.Write("Input first number: ");
 int firstNumber = Int32.Parse(Console.ReadLine());
-Console.Write ("Input second number:");
+Console.Write("Input second number:");
 int secondNumber = Int32.Parse(Console.ReadLine());
-if (firstNumber==secondNumber){
-    Console.Write ("You entered the same numbers");
-} else if (firstNumber>secondNumber){
-    Console.Write ($"{firstNumber}>{secondNumber}");
-}else {Console.Write($"{secondNumber}>{firstNumber}");
+if (firstNumber == secondNumber)
+{
+    Console.Write("You entered the same numbers");
+}
+else if (firstNumber > secondNumber)
+{
+    Console.Write($"{firstNumber}>{secondNumber}");
+}
+else
+{
+    Console.Write($"{secondNumber}>{firstNumber}");
 }
 
 
@@ -21,42 +27,74 @@ if (firstNumber==secondNumber){
 //2, 3, 7 -> 7
 //44 5 78 -> 78
 //22 3 9 -> 22
+
 int max = 0;
 Console.Write("Input first number: ");
 int firstNumber = Int32.Parse(Console.ReadLine());
-Console.Write ("Input second number: ");
-int secondNumber =Int32.Parse(Console.ReadLine());
-Console.Write ("Input third number: ");
+Console.Write("Input second number: ");
+int secondNumber = Int32.Parse(Console.ReadLine());
+Console.Write("Input third number: ");
 int thirdNumber = Int32.Parse(Console.ReadLine());
-if (firstNumber==secondNumber && secondNumber==thirdNumber){
-    Console.Write ("You entered the same numbers");
-} else {
+if (firstNumber == secondNumber && secondNumber == thirdNumber)
+{
+    Console.Write("You entered the same numbers");
+}
+else
+{
     max = firstNumber;
 }
-if (max<secondNumber){
-    max=secondNumber;
+if (max < secondNumber)
+{
+    max = secondNumber;
 }
-if (max<thirdNumber){
-    max=thirdNumber;
+if (max < thirdNumber)
+{
+    max = thirdNumber;
 }
-Console.WriteLine ($"Max number = {max}");
+Console.WriteLine($"Max number = {max}");
 
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
 //является ли число чётным (делится ли оно на два без остатка).
 //4 -> да
 //-3 -> нет
 //7 -> нет
-Console.Write ("Input number: ");
+
+Console.Write("Input number: ");
 int number = Int32.Parse(Console.ReadLine());
-if (number % 2 == 0){
-    Console.Write ($"{number} is even number");
-} else 
-{Console.Write ($"{number} is odd number");}
+if (number % 2 == 0)
+{
+    Console.Write($"Уеs, {number} is even number");
+}
+else
+{ Console.Write($"No, {number} is odd number"); }
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
+
+Console.Write("Input number: ");
+int number = Int32.Parse(Console.ReadLine());
+if (number > 0) //для положительных чисел
+{
+    for (int i = 1; i <= number; i++) //считаем включительно с введённой цифрой
+    {
+        if (i % 2 == 0)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+else //для отрицатиельных чисел. Для сокращения повторяющихся строк 82-85 и 92-95 нужно использовать метод?
+{
+    for (int i = 1; i >= number; i--) //считаем включительно с введённой цифрой
+    {
+        if (i % 2 == 0)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
 
 
 
