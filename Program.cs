@@ -49,9 +49,9 @@ Console.WriteLine ($"Max number = {max}");
 Console.Write ("Input number: ");
 int number = Int32.Parse(Console.ReadLine());
 if (number % 2 == 0){
-    Console.Write ($"{number} is even number");
+    Console.Write ($"Yes, {number} is even number");
 } else 
-{Console.Write ($"{number} is odd number");}
+{Console.Write ($"No, {number} is odd number");}
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
