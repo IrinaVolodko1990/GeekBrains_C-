@@ -41,5 +41,22 @@ if (max<thirdNumber){
 }
 Console.WriteLine ($"Max number = {max}");
 
+//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
+//является ли число чётным (делится ли оно на два без остатка).
+//4 -> да
+//-3 -> нет
+//7 -> нет
+Console.Write ("Input number: ");
+int number = Int32.Parse(Console.ReadLine());
+if (number % 2 == 0){
+    Console.Write ($"{number} is even number");
+} else 
+{Console.Write ($"{number} is odd number");}
+
+//Задача 8: Напишите программу, которая на вход принимает число (N), 
+//а на выходе показывает все чётные числа от 1 до N.
+//5 -> 2, 4
+//8 -> 2, 4, 6, 8
+
 
 
